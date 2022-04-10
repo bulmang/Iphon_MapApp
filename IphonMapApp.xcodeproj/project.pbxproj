@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436303162802F6A60062B25C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436303152802F6A60062B25C /* Place.swift */; };
 		43DDA1EF28013A2F00710F85 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA1EE28013A2F00710F85 /* Tests_iOS.swift */; };
 		43DDA1F128013A2F00710F85 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA1F028013A2F00710F85 /* Tests_iOSLaunchTests.swift */; };
 		43DDA1FB28013A2F00710F85 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA1FA28013A2F00710F85 /* Tests_macOS.swift */; };
@@ -17,6 +18,9 @@
 		43DDA20128013A2F00710F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA1D728013A2E00710F85 /* ContentView.swift */; };
 		43DDA20228013A2F00710F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DDA1D828013A2F00710F85 /* Assets.xcassets */; };
 		43DDA20328013A2F00710F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DDA1D828013A2F00710F85 /* Assets.xcassets */; };
+		43DDA21528013A5700710F85 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA21428013A5700710F85 /* Home.swift */; };
+		43DDA21728013A8A00710F85 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA21628013A8A00710F85 /* MapView.swift */; };
+		43DDA21928013B7F00710F85 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA21828013B7F00710F85 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432FB4A52801530C0021F150 /* IphonMapApp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IphonMapApp--iOS--Info.plist"; sourceTree = "<group>"; };
+		436303152802F6A60062B25C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		43DDA1D628013A2E00710F85 /* IphonMapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphonMapAppApp.swift; sourceTree = "<group>"; };
 		43DDA1D728013A2E00710F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43DDA1D828013A2F00710F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,9 @@
 		43DDA1F628013A2F00710F85 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DDA1FA28013A2F00710F85 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		43DDA1FC28013A2F00710F85 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		43DDA21428013A5700710F85 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		43DDA21628013A8A00710F85 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		43DDA21828013B7F00710F85 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436303142802F68F0062B25C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				436303152802F6A60062B25C /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		43DDA1D028013A2E00710F85 = {
 			isa = PBXGroup;
 			children = (
+				432FB4A52801530C0021F150 /* IphonMapApp--iOS--Info.plist */,
 				43DDA1D528013A2E00710F85 /* Shared */,
 				43DDA1E428013A2F00710F85 /* macOS */,
 				43DDA1ED28013A2F00710F85 /* Tests iOS */,
@@ -97,6 +115,9 @@
 		43DDA1D528013A2E00710F85 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				436303142802F68F0062B25C /* Model */,
+				43DDA21328013A4900710F85 /* View */,
+				43DDA21228013A3B00710F85 /* ViewModel */,
 				43DDA1D628013A2E00710F85 /* IphonMapAppApp.swift */,
 				43DDA1D728013A2E00710F85 /* ContentView.swift */,
 				43DDA1D828013A2F00710F85 /* Assets.xcassets */,
@@ -139,6 +160,23 @@
 				43DDA1FC28013A2F00710F85 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		43DDA21228013A3B00710F85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43DDA21828013B7F00710F85 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43DDA21328013A4900710F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43DDA21428013A5700710F85 /* Home.swift */,
+				43DDA21628013A8A00710F85 /* MapView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DDA20028013A2F00710F85 /* ContentView.swift in Sources */,
+				43DDA21928013B7F00710F85 /* MapViewModel.swift in Sources */,
+				43DDA21728013A8A00710F85 /* MapView.swift in Sources */,
+				436303162802F6A60062B25C /* Place.swift in Sources */,
+				43DDA21528013A5700710F85 /* Home.swift in Sources */,
 				43DDA1FE28013A2F00710F85 /* IphonMapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +510,8 @@
 				DEVELOPMENT_TEAM = 4V37SMT4Q2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IphonMapApp--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = please;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,6 +542,8 @@
 				DEVELOPMENT_TEAM = 4V37SMT4Q2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IphonMapApp--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = please;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
