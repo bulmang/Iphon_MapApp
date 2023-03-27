@@ -14,10 +14,11 @@
 - 위성 , 그림 지도 전환 버튼
 - 검색 한 곳 마커 찍기
 
-[Model](https://www.notion.so/Model-c230c93b50ff4bfbb69bc883a4f6d3b7)
+[Model](SwiftUI%20Map%20App%20fe181038e24e4973a68616364e14b6bd/Model%20c230c93b50ff4bfbb69bc883a4f6d3b7.md)
 
-[View](https://www.notion.so/View-50bbed7a1e264064bc2a96a20d748312)
+[View](SwiftUI%20Map%20App%20fe181038e24e4973a68616364e14b6bd/View%2050bbed7a1e264064bc2a96a20d748312.md)
 
-[ViewModel](https://www.notion.so/ViewModel-1c54443cdb6f4615b67c0208803a5b4e)
+[ViewModel](SwiftUI%20Map%20App%20fe181038e24e4973a68616364e14b6bd/ViewModel%201c54443cdb6f4615b67c0208803a5b4e.md)
 
 ---
+
